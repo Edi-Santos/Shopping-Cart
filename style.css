@@ -1,0 +1,153 @@
+/* ------------------------------------------- */
+/* TAGs */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 26, 255);
+}
+
+header h2, header label {
+  color: aliceblue;
+  text-shadow: 2px 2px 5px gray;
+}
+
+header input {
+  padding: 3px;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+header button {
+  padding: 4px;
+  border-style: none;
+  border-radius: 3px;
+  background-color: rgb(134, 195, 64);
+}
+
+header button:hover {
+  transition: 0.4s;
+  background-color: rgb(0, 26, 255);
+  border: 1px solid aliceblue;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+/* ---------------------------------- */
+/* Classes */
+.header-img {
+  height: 50px;
+  opacity: 0.6;
+}
+
+.header-img:hover {
+  transition: 0.4s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.cart__item {
+  margin-top: 5px;
+}
+
+.total-price {
+  margin-top: 15px;
+  font-family: monospace;
+  font-size: 16px;
+}
+/* ---------------------------------- */
+
+.top-bar {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.top-bar .input-name-group {
+  align-items: flex-start;
+  display: flex;
+}
+
+.top-bar .input-terms-group {
+  align-items: flex-start;
+  display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.items {
+  display: flex;
+  flex-basis: 70%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  border: 2px solid blue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 5px;
+  width: 200px;
+}
+
+.item .item__sku {
+  display: none;
+}
+
+.item .item__title {
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.item .item__image {
+  width: 100%;
+}
+
+.item .item__add {
+  background-color: green;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 5px;
+}
+
+.cart {
+  display: flex;
+  flex-basis: 30%;
+  flex-flow: column wrap;
+}
+
+.cart .cart__title {
+  flex-basis: 1;
+  font-size: 16pt;
+  text-align: center;
+}
+
+/* ---------------------------------------------- */
+
+
+.item:hover {
+  transition: 0.1s;
+  transform: scale(1.04);
+  box-shadow: 3px 2px 10px rgb(0, 26, 255);
+}
